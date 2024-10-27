@@ -1,0 +1,64 @@
+---- Requisitos Funcionais -----
+< Gestão de Clientes >
+
+*Cadastro de clientes, incluindo tipo (física ou jurídica), nome, contato, endereço completo, documentos (CNPJ/CPF, IE/RG, etc.), dados de contato (telefone, celular, email) e observações.
+*Classificação do cliente como pessoa física ou jurídica e filtro de listagem por tipo.
+
+< Gestão de Fornecedores >
+
+*Cadastro de fornecedores com informações como nome, contato, endereço completo, documentos (CNPJ/CPF, IE/RG, Inscrição Municipal), dados de contato (telefone, celular, email) e país.
+*Associar um fornecedor a um ou mais produtos para fácil rastreamento.
+
+< Gestão de Produtos e Serviços >
+
+*Cadastro de produtos e serviços com código, descrição, estoque atual, custo, custo médio, lucro bruto, preço de venda, além de características como tamanho, cor e peso.
+*Associações:
+    *Associar cada produto a um fornecedor.
+    *Organização em grupos, subgrupos e famílias.
+
+< Gestão de Números de Série >
+
+* Registro de número de série para produtos específicos com vínculo ao código do produto e número da nota fiscal de compra.
+
+< Movimentação de Estoque >
+
+*Permitir entrada e saída de produtos com ajuste automático no estoque.
+*Registro de tipo de movimentação (entrada ou saída), data, quantidade e descrição detalhada da movimentação.
+
+< Relatórios e Consultas >
+
+*Consultar listas de clientes, fornecedores e produtos com filtros por tipo, nome e categoria.
+*Gerar relatórios de movimentações de estoque.
+
+< Autenticação e Autorização >
+
+*Sistema de autenticação usando JWT (JSON Web Token) para proteção das rotas de API e verificação de permissões de acesso por nível de usuário.
+
+Requisitos Não Funcionais
+
+< Segurança >
+
+*Utilização de autenticação JWT para proteger a API.
+*Regras de acesso por nível de usuário para garantir que informações sensíveis estejam seguras.
+
+< Escalabilidade >
+
+*Arquitetura modular, com estruturação em módulos bem definidos para facilitar a adição de funcionalidades no futuro.
+
+< Performance >
+
+*API otimizada para consultas de produtos e movimentações, principalmente em operações de listagem e filtragem.
+*Armazenamento em cache de consultas frequentemente acessadas.
+
+< Conformidade >
+
+*Validação de dados de acordo com padrões nacionais (ex. CNPJ, CPF, Código BACEN).
+
+< Usabilidade e Interface >
+
+*O dashboard deve ser responsivo e amigável para facilitar o uso de qualquer dispositivo.
+*Sistema de rotas de API documentado com Swagger ou outra ferramenta de documentação interativa.
+
+< Backup e Recuperação >
+
+* Mecanismo de backup periódico para manter os dados seguros e disponíveis em caso de falhas.

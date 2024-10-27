@@ -1,0 +1,57 @@
+# Python
+*.py[cod]
+__pycache__/
+*.pyo
+*.pyd
+
+# Ambiente virtual
+venv/
+env/
+.env
+
+# Banco de dados
+db.sqlite3
+*.sqlite3
+
+# Arquivos de configuração
+*.log
+*.pot
+*.pyc
+*.db
+*.egg-info/
+dist/
+build/
+*.egg
+*.egg-info/
+
+# Diretórios de compilação
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Editor de código
+.vscode/
+.idea/
+*.swp
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de documentação
+*.docx
+*.pdf
+*.zip
+
+# Arquivos de credenciais
+*.env
+
+# Arquivos de teste
+coverage.xml
+.coverage
+nosetests.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+.coverage.*
